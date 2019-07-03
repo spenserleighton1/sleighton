@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
 import Menu from './Components/Menu/Menu'
+import Header from './Components/Header/Header'
 import Home from './Pages/Home/Home'
 import Contact from './Pages/Contact/Contact'
 
@@ -35,7 +36,8 @@ class App extends Component {
       <div>
         <Menu toggleMenu={ this.toggleMenu } /> 
         <div className={ appTilt }>
-        <div id="hambmenu" onClick={ () => this.toggleMenu() } className={ menuStatus }><span></span><span></span><span></span><span></span></div>
+          {/* <div id="hambmenu" onClick={ () => this.toggleMenu() } className={ menuStatus }><span></span><span></span><span></span><span></span></div> */}
+          <Header menuStatus={ menuStatus } toggleMenu={ this.toggleMenu } />
           <Route exact path={'/'} component={ Home } />
           <Route exact path={'/contact'} component={ Contact } />
         </div>

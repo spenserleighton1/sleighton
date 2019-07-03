@@ -1,14 +1,16 @@
+@import "../../SCSS/variables.scss";
+
 .menu{
     position: fixed;
     top:0;
     right:0;
     bottom:0;
     left:0;
-    background-color: #000; 
+    background-color: $black; 
     z-index: 0;
 
     h1{
-        color: #fff;
+        color: $white;
         font-size: 1.75em;
         position: fixed;
         right: 30px;
@@ -27,7 +29,7 @@
             a{
                 text-decoration: none;
                 cursor: pointer;
-                color: #fff;
+                color: $white;
             }
             
             a.btn{

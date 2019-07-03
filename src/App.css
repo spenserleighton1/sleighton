@@ -4,82 +4,11 @@
     overflow: scroll;
     position: relative;
     z-index: 1;
-    background-color: white;
+    background-color: #65ccb8;
     transition: .25s ease;
     transform-origin: 0% 0%;
 }
 
 .menu-tilt{
     transform: rotate(25deg);
-}
-
-#hambmenu {
-    position: fixed;
-    top: 10px;
-    right: 50px;
-    z-index: 10000;
-    width: 40px;
-    height: 45px;
-    float: left;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-}
-#hambmenu span {
-position: absolute;
-height: 5px;
-width: 100%;
-vertical-align: middle;
-margin: 20px 0 0 15px;
-background: red;
-border-radius: 8px;
-opacity: 1;
-left: 0;
-transform: rotate(0deg);
-transition: 0.25s ease-in-out;
-padding: 0px;
-}
-
-.hambclicker {
-content: "";
-height: 48px;
-width: 55px;
-position: absolute;
-top: 8px;
-left: 8px;
-cursor: pointer;
-z-index: 9;
-}
-
-#hambmenu span:nth-child(1) {
-top: 0px;
-}
-
-#hambmenu span:nth-child(2), #hambmenu span:nth-child(3) {
-top: 10px;
-}
-
-#hambmenu span:nth-child(4) {
-top: 20px;
-}
-
-#hambmenu.isopen span:nth-child(1) {
-top: 18px;
-width: 0%;
-left: 50%;
-opacity: 0;
-}
-
-#hambmenu.isopen span:nth-child(2) {
-transform: rotate(45deg);
-}
-
-#hambmenu.isopen span:nth-child(3) {
-transform: rotate(-45deg);
-}
-
-#hambmenu.isopen span:nth-child(4) {
-top: 18px;
-width: 0%;
-left: 50%;
-opacity: 0;
 }

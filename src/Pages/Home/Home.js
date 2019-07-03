@@ -12,7 +12,13 @@ class Home extends Component {
 
     render() {
         return(
-            <div>
+            <div className="home">
+                <div className="header">
+                    <div className="name-container">
+                        <div className="name-bg"></div>
+                        <h1 className="name-fg">Backbone Media</h1>
+                    </div>
+                </div>
                 test
             </div>
         )
