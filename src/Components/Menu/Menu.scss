@@ -14,8 +14,32 @@
         font-size: 1.75em;
         position: fixed;
         right: 30px;
+        animation: slideout .6s;
         @media (min-width: 768px) {
             font-size: 4em;
+        }
+    }
+
+    @keyframes slidein {
+        from {
+          right: 1000px;
+        }
+        to {
+          right: 30px
+        }
+    }
+    @keyframes slideout {
+        from {
+          right: 30px;
+        }
+        to {
+          right: 1000px
+        }
+    }
+
+    &.isopen{
+        h1{
+            animation: slidein .4s;
         }
     }
 

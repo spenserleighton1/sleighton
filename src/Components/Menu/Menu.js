@@ -1,9 +1,12 @@
 import React from 'react';
 import './Menu.scss';
 
-const Menu = () => {
+const Menu = (props) => {
+
+    let menuClass = props.menuStatus + ' menu';
+
     return(
-        <div className="menu">
+        <div className={ menuClass }>
         <h1>Spenser Leighton</h1>
             <ul>
                 <li><a className="btn" href="/">Test</a></li>

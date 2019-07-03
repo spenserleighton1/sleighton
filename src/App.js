@@ -34,9 +34,8 @@ class App extends Component {
 
     return (
       <div>
-        <Menu toggleMenu={ this.toggleMenu } /> 
+        <Menu menuStatus={ menuStatus } /> 
         <div className={ appTilt }>
-          {/* <div id="hambmenu" onClick={ () => this.toggleMenu() } className={ menuStatus }><span></span><span></span><span></span><span></span></div> */}
           <Header menuStatus={ menuStatus } toggleMenu={ this.toggleMenu } />
           <Route exact path={'/'} render={() => (<Home menuStatus={ menuStatus } />)}/>
           <Route exact path={'/contact'} component={ Contact } />
