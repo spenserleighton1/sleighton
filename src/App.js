@@ -38,7 +38,7 @@ class App extends Component {
         <div className={ appTilt }>
           {/* <div id="hambmenu" onClick={ () => this.toggleMenu() } className={ menuStatus }><span></span><span></span><span></span><span></span></div> */}
           <Header menuStatus={ menuStatus } toggleMenu={ this.toggleMenu } />
-          <Route exact path={'/'} component={ Home } />
+          <Route exact path={'/'} render={() => (<Home menuStatus={ menuStatus } />)}/>
           <Route exact path={'/contact'} component={ Contact } />
         </div>
       </div>

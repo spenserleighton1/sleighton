@@ -6,7 +6,6 @@ import twitter from '../../Assets/twitter-logo-button.svg'
 import './Header.scss';
 
 const Header = (props) => {
-    console.log('heck shit', props)
     return(
         <div className="header">
             <ul className={ props.menuStatus }>

@@ -11,12 +11,14 @@ class Home extends Component {
     }
 
     render() {
+        let homeClass = this.props.menuStatus + ' home';
         return(
-            <div className="home">
+            <div className={ homeClass }>
                 <div className="header">
                     <div className="name-container">
                         <div className="name-bg"></div>
                         <h1 className="name-fg">Backbone Media</h1>
+                        <h1 className="name-sh">Backbone Media</h1>
                     </div>
                 </div>
                 test
