@@ -7,6 +7,9 @@
     background-color: #000; 
     z-index: -1;
     ul{
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
         list-style-type: none;
         padding-left: 0;
         li{

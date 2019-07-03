@@ -18,11 +18,11 @@ class App extends Component {
     this.setState({ menu: !this.state.menu})
 
       if(this.state.menu) {
-        document.body.style.maxHeight = "100vh";
-        document.body.style.overflow = "hidden";
-      } else {
         document.body.style.maxHeight = "";
         document.body.style.overflow = "";
+      } else {
+        document.body.style.maxHeight = "100vh";
+        document.body.style.overflow = "hidden";
       }
 
   }
