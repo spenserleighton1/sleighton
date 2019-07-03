@@ -1,5 +1,15 @@
 .App{
     text-align: left;
+    height: 100vh;
+    overflow: scroll;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    transition: .5s;
+}
+.menu-tilt{
+    transform: rotate(25deg);
+    transform-origin: 0% 0%;
 }
 
 

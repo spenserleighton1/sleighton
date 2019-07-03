@@ -14,19 +14,31 @@ class App extends Component {
     }
   }
 
-  toggleMenu = () => this.setState({ menu: !this.state.menu})
+  toggleMenu = () => {
+    this.setState({ menu: !this.state.menu})
+
+      if(this.state.menu) {
+        document.body.style.maxHeight = "100vh";
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.maxHeight = "";
+        document.body.style.overflow = "";
+      }
+
+  }
 
   render() {
     let menuStatus = this.state.menu ? 'isopen' : ''
+    let appTilt = this.state.menu ? 'App menu-tilt' : 'App'
 
     return (
-      <div className="App">
-      <div id="hambmenu" onClick={ () => this.toggleMenu() } className={ menuStatus }><span></span><span></span><span></span><span></span></div>
-      { this.state.menu && 
-                    <Menu toggleMenu={ this.toggleMenu } /> }
-
-        <Route exact path={'/'} component={ Home } />
-        <Route exact path={'/contact'} component={ Contact } />
+      <div>
+        <Menu toggleMenu={ this.toggleMenu } /> 
+        <div className={ appTilt }>
+        <div id="hambmenu" onClick={ () => this.toggleMenu() } className={ menuStatus }><span></span><span></span><span></span><span></span></div>
+          <Route exact path={'/'} component={ Home } />
+          <Route exact path={'/contact'} component={ Contact } />
+        </div>
       </div>
     );
   }
