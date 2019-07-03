@@ -4,13 +4,12 @@ import './Menu.scss';
 const Menu = () => {
     return(
         <div className="menu">
+        <h1>Spenser Leighton</h1>
             <ul>
-                <li>Test 1</li>
-                <li>Test 2</li>
-                <li>Test 3</li>
-                <li>Test 4</li>
-                <li>Test 5</li>
-                <li>Test 6</li>
+                <li><a className="btn" href="/">Test</a></li>
+                <li><a className="btn" href="/">Test</a></li>
+                <li><a className="btn" href="/">Test</a></li>
+                <li><a className="btn" href="/">Test</a></li>
             </ul>
         </div>
     )

@@ -5,24 +5,24 @@
     position: relative;
     z-index: 1;
     background-color: white;
-    transition: .5s;
-}
-.menu-tilt{
-    transform: rotate(25deg);
+    transition: .25s ease;
     transform-origin: 0% 0%;
 }
 
+.menu-tilt{
+    transform: rotate(25deg);
+}
 
 #hambmenu {
     position: fixed;
     top: 10px;
     right: 50px;
     z-index: 10000;
-width: 40px;
-height: 45px;
-float: left;
-transition: 0.5s ease-in-out;
-cursor: pointer;
+    width: 40px;
+    height: 45px;
+    float: left;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 #hambmenu span {
 position: absolute;

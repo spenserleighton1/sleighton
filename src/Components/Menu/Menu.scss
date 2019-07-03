@@ -5,15 +5,72 @@
     bottom:0;
     left:0;
     background-color: #000; 
-    z-index: -1;
+    z-index: 0;
+
+    h1{
+        color: #fff;
+        font-size: 1.75em;
+        position: fixed;
+        right: 30px;
+        @media (min-width: 768px) {
+            font-size: 4em;
+        }
+    }
+
     ul{
         position: fixed;
-        bottom: 25px;
-        right: 25px;
+        bottom: 30px;
+        right: 30px;
         list-style-type: none;
         padding-left: 0;
         li{
-            color: aqua;
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                color: #fff;
+            }
+            
+            a.btn{
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: .2s;
+                display: flex;
+                align-items: center;
+                padding: 13px 0 13px 18px;
+                transition: all .2s;
+                letter-spacing: 2px;
+                z-index: 1;
+                font-size: 12px;
+                font-weight: 500;
+                &:before{
+                    transition: .4s;
+                    z-index: -1;
+                    position: absolute;
+                    left: 105%;
+                    content: '';
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+                    background-color: rgba($color: silver, $alpha: .3);
+                    padding: 9px;
+
+                }
+            
+                &:hover{
+                    padding-left: 0;
+                    &:before{
+                        left: 0%;
+                        border-color: silver;
+                        content: '';
+                        background-color: transparent;
+                    }
+                }
+            }
         }
     }
 }
+
+// Yo. Erica and I just got offered a hotel room in estes park for the 4th. Not sure what everyone elses friday plans are but we are gonna take advatage of the offer and stay up there thursday and friday.
