@@ -9,10 +9,9 @@ const Menu = (props) => {
         <div className={ menuClass }>
         <h1>Spenser Leighton</h1>
             <ul>
-                <li><a className="btn" href="/">Test</a></li>
-                <li><a className="btn" href="/">Test</a></li>
-                <li><a className="btn" href="/">Test</a></li>
-                <li><a className="btn" href="/">Test</a></li>
+                <li><a className="btn" href="/">Home</a></li>
+                <li><a className="btn" href="/">Projects</a></li>
+                <li><a className="btn" href="/">Contact</a></li>
             </ul>
         </div>
     )

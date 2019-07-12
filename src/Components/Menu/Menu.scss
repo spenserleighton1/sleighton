@@ -88,8 +88,10 @@
                 &:hover{
                     padding-left: 0;
                     &:before{
+                        border-radius: 0;
+                        transform: skew(-25deg, 25deg);
                         left: 0%;
-                        border-color: silver;
+                        border-color: #65ccb8;
                         content: '';
                         background-color: transparent;
                     }
