@@ -4,6 +4,7 @@ import Menu from './Components/Menu/Menu'
 import Header from './Components/Header/Header'
 import Home from './Pages/Home/Home'
 import Contact from './Pages/Contact/Contact'
+import Projects from './Pages/Projects/Projects'
 
 import './App.css';
 
@@ -34,11 +35,12 @@ class App extends Component {
 
     return (
       <div>
-        <Menu menuStatus={ menuStatus } /> 
+        <Menu menuStatus={ menuStatus } toggleMenu={ this.toggleMenu }/> 
         <div className={ appTilt }>
           <Header menuStatus={ menuStatus } toggleMenu={ this.toggleMenu } />
           <Route exact path={'/'} render={() => (<Home menuStatus={ menuStatus } />)}/>
           <Route exact path={'/contact'} component={ Contact } />
+          <Route exact path={'/projects'} component={ Projects } />
         </div>
       </div>
     );

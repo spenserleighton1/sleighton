@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import './Menu.scss';
 
 const Menu = (props) => {
@@ -8,10 +10,10 @@ const Menu = (props) => {
     return(
         <div className={ menuClass }>
         <h1>Spenser Leighton</h1>
-            <ul>
-                <li><a className="btn" href="/">Home</a></li>
-                <li><a className="btn" href="/">Projects</a></li>
-                <li><a className="btn" href="/">Contact</a></li>
+            <ul onClick={ () => props.toggleMenu() }>
+                <li><Link className="btn" to="/">Home</Link></li>
+                <li><Link className="btn" to="/projects">Projects</Link></li>
+                <li><Link className="btn" to="/contact">Contact</Link></li>
             </ul>
         </div>
     )
