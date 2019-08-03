@@ -30,6 +30,21 @@ class App extends Component {
 
   }
 
+  bgColor = () => {
+    const colors = {
+      6: '#CB875D',
+      1: '#60BDB8',
+      2: '#D05340',
+      3: '#F1B852',
+      4: '#E98071',
+      5: '#EDA72D'
+    }
+
+    let colorKey = Math.floor(Math.random() * 6) + 1;
+
+    return {backgroundColor: colors[colorKey]};
+  }
+
   render() {
     let menuStatus = this.state.menu ? 'isopen' : ''
     let appTilt = this.state.menu ? 'App menu-tilt' : 'App'
@@ -38,7 +53,7 @@ class App extends Component {
       <div>
         <Menu menuStatus={ menuStatus } toggleMenu={ this.toggleMenu }/> 
         <Titanic />
-        <div className={ appTilt }>
+        <div style={this.bgColor()} className={ appTilt }>
           <Header menuStatus={ menuStatus } toggleMenu={ this.toggleMenu } />
           <Route exact path={'/'} render={() => (<Home menuStatus={ menuStatus } />)}/>
           <Route exact path={'/contact'} component={ Contact } />
