@@ -20,8 +20,8 @@ export default class CardFlip extends Component {
         return (
             <ReactCardFlip  isFlipped={this.state.isFlipped} infinite={true} flipDirection="horizontal">
                 <div className="project-card" key="front">
+                            <h2>{ this.props.title }</h2>
                             <h1>flip me</h1>
-                            <h1>{ this.props.title }</h1>
 
                     
                             <button className="" onClick={this.handleClick}>Get the Details</button>
