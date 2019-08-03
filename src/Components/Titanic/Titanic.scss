@@ -6,6 +6,7 @@
     left: 0;
     z-index: 9;
     background-image: url('../../Assets/titanic-gif.gif');
+    cursor:url(../../Assets/titanic-cursor.jpg), auto;
 
     iframe{
         position: fixed;
@@ -13,8 +14,18 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
+        cursor:url(../../Assets/titanic-cursor.jpg), auto;
     }
 
+    button{
+        margin: 10px;
+        background: none;
+        border: none;
+        cursor:url(../../Assets/titanic-cursor.jpg), auto;
+        img{
+            width: 90px;
+        }
+    }
 
     &.text{
         background-image: unset;
@@ -25,6 +36,7 @@
         z-index: 10;
         color: red;
         font-size: 25vw;
+        cursor: default;
     }
 
     &.hidden{

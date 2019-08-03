@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import close from '../../Assets/remove-button.svg'
 import './Titanic.scss';
 
 class Titanic extends Component {
@@ -81,7 +82,7 @@ class Titanic extends Component {
        return (
       <div className={ this.state.celibrate ? "titanic-container" : "titanic-container hidden" }>
       
-        <button onClick={this.handleClose}>Close that shit out</button>
+        <button onClick={this.handleClose}> <img src={close} alt="sink the ship and go home"/> </button>
         <iframe className="titanic-vid" width="600" height="355" src="https://www.youtube.com/embed/otgWwcUuWO4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     ); 
