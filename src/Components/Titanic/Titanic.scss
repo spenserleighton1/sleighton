@@ -1,0 +1,35 @@
+.titanic-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    background-image: url('../../Assets/titanic-gif.gif');
+
+    iframe{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+
+
+    &.text{
+        background-image: unset;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        color: red;
+        font-size: 25vw;
+    }
+
+    &.hidden{
+        display: none;
+        visibility: hidden;
+    }
+
+}
