@@ -52,7 +52,7 @@ class App extends Component {
     return (
       <div>
         <Menu menuStatus={ menuStatus } toggleMenu={ this.toggleMenu }/> 
-        <Titanic />
+        {/* <Titanic /> */}
         <div style={this.bgColor()} className={ appTilt }>
           <Header menuStatus={ menuStatus } toggleMenu={ this.toggleMenu } />
           <Route exact path={'/'} render={() => (<Home menuStatus={ menuStatus } />)}/>
