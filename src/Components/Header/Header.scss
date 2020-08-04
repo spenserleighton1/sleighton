@@ -4,8 +4,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        float: right;
-        padding-right: 20px;
+        justify-content: flex-end;
         li{
             display: inline-block;
             padding-right: 10px;
@@ -17,7 +16,6 @@
             &:hover{
                 img{
                     opacity: .7;
-                    transform: rotate(5deg);
                 }
             }
         }
@@ -25,13 +23,7 @@
         &.isopen{
             li{
                 img{
-                    transform: rotate(-25deg);
-                }
-                &:hover{
-                    img{
-                        transform: rotate(-30deg);
-                        opacity: .7;
-                    }
+                    transform: rotate(-15deg);
                 }
             }
         }
@@ -45,22 +37,23 @@
     width: 40px;
     height: 28px;
     float: left;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     cursor: pointer;
+    margin-left: 20px;
 }
 #hambmenu span {
-position: absolute;
-height: 5px;
-width: 100%;
-vertical-align: middle;
-// margin: 20px 0 0 15px;
-background: #182628;
-border-radius: 8px;
-opacity: 1;
-left: 0;
-transform: rotate(0deg);
-transition: 0.25s ease-in-out;
-padding: 0px;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    vertical-align: middle;
+    // margin: 20px 0 0 15px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+    padding: 0px;
 
  &:hover{
      opacity: .7;
@@ -110,4 +103,8 @@ top: 18px;
 width: 0%;
 left: 50%;
 opacity: 0;
+}
+
+#hambmenu.isopen {
+    transform: rotate(-15deg);
 }

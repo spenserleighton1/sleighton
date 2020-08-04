@@ -1,80 +1,76 @@
 @import "../../SCSS/variables.scss";
 
 .home{
-    padding: 75px 5vw;
-    @media (min-width: 768px) {
-        padding: 75px 10vw
-    }
-        .name-container{
-            position: relative;
-            min-height: 100px;
-            .name-bg,
-            .name-fg,
-            .name-sh{
-                position: absolute;
-                transition: .3s;
-                h1{
-                    padding-bottom: 10px;
-                    font-size: 3em;
-                }
+    .name-container{
+        position: relative;
+        min-height: 100px;
+        .name-bg,
+        .name-fg,
+        .name-sh{
+            position: absolute;
+            transition: .3s;
+            h1{
+                padding-bottom: 10px;
+                font-size: 3em;
             }
-            .name-bg{
-                width: 70vw;
-                height: 300px;
-                left: 125px;
-                top: -20px;
-                @media (min-width: 768px) {
-                    left: 170px;
-                    top: -10px;
-                }
+        }
+        .name-bg{
+            width: 70vw;
+            height: 300px;
+            left: 125px;
+            top: -20px;
+            @media (min-width: 768px) {
+                left: 170px;
+                top: -10px;
             }
-            .name-fg{
-                opacity: 1;
-                color: $white;
-                margin: 0;
-                // width: 80vw;
+        }
+        .name-fg{
+            opacity: 1;
+            color: $black;
+            margin: 0;
+            // width: 80vw;
 
-                .inside-joke{
-                    transition: .2s;
-                    opacity: 0;
-                    margin-right: -10px;
-
-                }
-                &:hover{
-                    .inside-joke{
-                        opacity: 1;
-                        margin-right: 0;
-                    }
-                }
-            }
-            .name-sh{
+            .inside-joke{
+                transition: .2s;
                 opacity: 0;
-                color: $black;
-                transition: .3s;
-                width: 60vw;
-                left: 145px;
-                top: -5vh;
-                @media (min-width: 768px) {
-                    left: 115px;
-                    left: 95px;
-                    top: 0vh;
+                margin-right: -10px;
+
+            }
+            &:hover{
+                .inside-joke{
+                    opacity: 1;
+                    margin-right: 0;
                 }
             }
         }
+        .name-sh{
+            opacity: 0;
+            color: $black;
+            transition: .3s;
+            width: 60vw;
+            left: 145px;
+            top: -5vh;
+            @media (min-width: 768px) {
+                left: 115px;
+                left: 95px;
+                top: 0vh;
+            }
+        }
+    }
 
     &.isopen{
         .name-container{
             .name-bg{
-                transform: skewX(25deg);
+                transform: skewX(15deg);
                 background-color: rgba($color: $md-turq, $alpha: .3);
             }
             .name-sh{
                 opacity: .3;
-                transform: skewX(25deg);
+                transform: skewX(15deg);
             }
             .name-fg{
                 opacity: 0;
-                transform: skewX(25deg)
+                transform: skewX(15deg)
             }
         }
     }

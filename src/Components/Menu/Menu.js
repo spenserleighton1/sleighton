@@ -8,7 +8,7 @@ const Menu = (props) => {
     let menuClass = props.menuStatus + ' menu';
 
     return(
-        <div className={ menuClass }>
+        <div style={props.bgColor} className={ menuClass }>
         <h1>Spenser Leighton</h1>
             <ul onClick={ () => props.toggleMenu() }>
                 <li><Link className="btn" to="/">Home</Link></li>

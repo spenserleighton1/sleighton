@@ -4,11 +4,13 @@
     overflow: scroll;
     position: relative;
     z-index: 1;
-    background-color: #65ccb8;
+    background-color: #182628;
     transition: .25s ease;
     transform-origin: 0% 0%;
+    padding: 30px;
 }
 
 .menu-tilt{
-    transform: rotate(25deg);
+    transform: rotate(15deg);
 }
+
