@@ -5,6 +5,9 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        background-color: rgba($color: #182628, $alpha: .5);
         li{
             display: inline-block;
             padding-right: 10px;
@@ -21,12 +24,24 @@
         }
 
         &.isopen{
-            li{
-                img{
-                    transform: rotate(-15deg);
-                }
-            }
+            top: -50px;
+            position: absolute;
+            right: -36px;
+            transform: skewX(-55deg);
+            // border-right: 1px solid black;
+            // border-top: 1px solid;
+            padding: 10px;
+            width: 100%;
         }
+    }
+    .right-side{
+        width: 71px;
+        height: 100%;
+        background-color: rgba($color: #182628, $alpha: .3);
+        position: absolute;
+        left: 100%;
+        top: -25px;
+        transform: skewY(-35deg);
     }
 }
 
@@ -106,5 +121,5 @@ opacity: 0;
 }
 
 #hambmenu.isopen {
-    transform: rotate(-15deg);
+    // transform: rotate(-15deg);
 }

@@ -53,7 +53,7 @@ class App extends Component {
       <div>
         <Menu bgColor={this.bgColor()} menuStatus={ menuStatus } toggleMenu={ this.toggleMenu }/> 
         <Titanic />
-        <div className={ appTilt }>
+        <div className={appTilt}>
           <Header menuStatus={ menuStatus } toggleMenu={ this.toggleMenu } />
           <Route exact path={'/'} render={() => (<Home menuStatus={ menuStatus } />)}/>
           <Route exact path={'/contact'} component={ Contact } />

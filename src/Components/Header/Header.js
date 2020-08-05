@@ -17,6 +17,7 @@ const Header = (props) => {
                 <li><a href="mailto:spenser.leighton@gmail.com"><img src={ mail } alt="mail"/></a></li>
                 <li><div id="hambmenu" onClick={ () => props.toggleMenu() } className={ props.menuStatus }><span></span><span></span><span></span><span></span></div></li>
             </ul>
+            <div className="right-side"></div>
         </div>
     )
 }
